@@ -1,0 +1,8 @@
+FROM node:17
+WORKDIR /front
+
+ENV CHOKIDAR_USEPOLLING=true
+
+ENV HOME=/LANG=C.UTF-8 \
+    TZ=Asia/Tokyo \
+    HOST=0.0.0.0

@@ -1,0 +1,11 @@
+version: "3.7"
+services:
+  app:
+    build:
+      context: .
+      dockerfile: app/Dockerfile
+    volumes:
+      - ./app:/app
+    command: sh -c "yarn install && yarn dev"
+    ports:
+      - "8000:3000"
