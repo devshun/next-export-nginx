@@ -1,5 +1,5 @@
 FROM node:17
-WORKDIR /front
+WORKDIR /app
 
 ENV CHOKIDAR_USEPOLLING=true
 
